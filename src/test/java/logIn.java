@@ -85,7 +85,7 @@ public class logIn {
 				NativeDriver.findElement(By.xpath("//secure")).sendKeys("Perfecto1");
 			}catch(Exception e)
 			{
-				NativeDriver.findElement(By.xpath("//textfield[contains(text(),'Password')]")).sendKeys("Perfecto1");
+				NativeDriver.findElement(By.xpath("//textfield[contains(text(),'password')]")).sendKeys("Perfecto1");
 			}
 			NativeDriver.findElement(By.xpath("//button[text()='SIGN IN']")).click();
 
