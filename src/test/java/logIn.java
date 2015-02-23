@@ -21,11 +21,11 @@ import com.perfectomobile.selenium.MobilePoint;
 import com.perfectomobile.selenium.api.IMobileDevice;
 import com.perfectomobile.selenium.api.IMobileWebDriver;
 
-public class starbucksLogIn {
+public class logIn {
 
 	IMobileDevice _device;
 	MobileDriver PMdriver ;
-	public starbucksLogIn(String dev) {
+	public logIn(String dev) {
 
 		  PMdriver = new MobileDriver();
 		 _device = PMdriver.getDevice(dev);
