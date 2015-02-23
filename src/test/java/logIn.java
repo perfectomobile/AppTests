@@ -92,14 +92,6 @@ public class logIn {
 			//download Report 
 			_device.close();
 			PMdriver.quit();	
-			InputStream rep = PMdriver.downloadReport(MediaType.PDF);
-			File repFile = new File("C:\\test\\Starbucks"+_device+".pdf");
-			try {
-				FileUtils.write(rep, repFile);
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
 		}
 	}
 	
