@@ -32,7 +32,7 @@ public class logIn {
 
 
 	}
-	@SuppressWarnings("deprecation")
+	
 	public void runTest()
 	{
 		IMobileWebDriver  NativeDriver ;
