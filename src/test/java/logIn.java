@@ -80,7 +80,13 @@ public class logIn {
 
 			// Login 
 			NativeDriver.findElement(By.xpath("//textfield[contains(text(),'Username')]")).sendKeys("uzi.eilon@gmail.com");
-			NativeDriver.findElement(By.xpath("//secure")).sendKeys("Perfecto1");
+
+			try{
+				NativeDriver.findElement(By.xpath("//secure")).sendKeys("Perfecto1");
+			}catch(Exception e)
+			{
+				NativeDriver.findElement(By.xpath("//textfield[contains(text(),'Password')]")).sendKeys("Perfecto1");
+			}
 			NativeDriver.findElement(By.xpath("//button[text()='SIGN IN']")).click();
 
 			VisualDriver.findElement(By.linkText("PAY")) ;
